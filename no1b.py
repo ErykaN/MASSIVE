@@ -40,3 +40,22 @@ for filename in os.listdir(input_folder):
             for line in file:
                 data = json.loads(line)
                 data_by_language[language_code].append(data)
+                # Iterate through the data and create XLSX files for each language
+for language_code, data in data_by_language.items():
+    # Create a Pandas DataFrame from the JSON data
+    df = pd.DataFrame(data, columns=['id', 'utt', 'annot_utt'])
+
+    # Merge data from the original en-US file based on the 'id' column
+    en_us_data = pd.DataFrame(original_data, columns=['id', 'utt', 'annot_utt'])
+    df = pd.merge(df, en_us_data, on='id', how='left')
+
+    # Construct the output XLSX file name (e.g., "en-am.xlsx")
+    output_filename = f"en-{language_code}.xlsx"
+
+    # Define the full output file path
+    output_file_path = os.path.join(output_folder, output_filename)
+
+    # Save the DataFrame to an XLSX file
+    df.to_excel(output_file_path, index=False)
+
+print("XLSX files with data have been updated in the 'output' folder.")
