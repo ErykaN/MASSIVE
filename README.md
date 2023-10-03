@@ -1,7 +1,7 @@
 # amazon_massive_dataset
 ## Brief Summary
 
-Set up a new Python3 Development environment, install relevant dependencies, build a Python3 project with PyCharm structure, and import the provided MASSIVE Dataset. Generate en-xx.xlsx files for all languages using id, utt, and annot_utt fields, avoiding recursive algorithms. Generate separate json files for English (en), Swahili (sw), and German (de) for test, train, and dev datasets. Additionally, generate a large json file showing translations from en to xx with id and utt for all train sets. Ensure the JSON file structure is pretty printed.
+Set up a new Python3 Development environment, install relevant dependencies, build a Python3 project with PyCharm structure, and import the provided MASSIVE Dataset. Generate en-xx.xlsx files for all languages using id, utt, and annot_utt fields, avoiding recursive algorithms. Generate separate json files for English (en), Swahili (sw), and German (de) for test, train, and dev datasets. Additionally, generate a large json file showing translations from en to xx with id and utt for all train sets. Ensure the JSON file structure is pretty printed
 
 ## Table of Contents
 - [Dependencies](#dependencies)
