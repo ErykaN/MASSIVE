@@ -1,7 +1,7 @@
 # amazon_massive_dataset
 ## Brief Summary
 
-Set up a new Python3 Development environment, install relevant dependencies, build a Python3 project with PyCharm structure, and import the provided MASSIVE Dataset. Generate en-xx.xlsx files for all languages using id, utt, and annot_utt fields, avoiding recursive algorithms. Generate separate json files for English (en), Swahili (sw), and German (de) for test, train, and dev datasets. Additionally, generate a large json file showing translations from en to xx with id and utt for all train sets. Ensure the JSON file structure is pretty printed
+Set up a new Python3 Development environment install relevant dependencies, build a Python3 project with PyCharm structure, and import the provided MASSIVE Dataset. Generate en-xx.xlsx files for all languages using id, utt, and annot_utt fields, avoiding recursive algorithms. Generate separate json files for English (en), Swahili (sw), and German (de) for test, train, and dev datasets. Additionally, generate a large json file showing translations from en to xx with id and utt for all train sets. Ensure the JSON file structure is pretty printed
 
 ## Table of Contents
 - [Dependencies](#dependencies)
@@ -15,7 +15,7 @@ Set up a new Python3 Development environment, install relevant dependencies, bui
 
 Ensure you have the following dependencies installed:
 - Download Python 3.x : Click on the following link to download Python https://www.python.org/
-- Download an IDE environment that well suites you i.e PyCharm https://www.jetbrains.com/help/pycharm/installation-guide.html#silent
+- Download an IDE Development that well suites you i.e PyCharm https://www.jetbrains.com/help/pycharm/installation-guide.html#silent
 - Setup an environment using either pip or you can use Anaconda, which will automatically create an environment for you. Click the following link to download Anaconda https://www.anaconda.com/download
 - Make sure to set the Python interpreter as the environment you will be using for this project
 - Pandas: You can install it using pip with
